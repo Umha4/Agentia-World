@@ -45,7 +45,7 @@ const Footer = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            "Empowering AI innovations for a better future."
+            {"Empowering AI innovations for a better future."}
           </motion.p>
 
           {/* Social Icons */}

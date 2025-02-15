@@ -1,13 +1,12 @@
 "use client";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
-import Header from "@/components/header";
 // import AIFeatureCards from "@/components/fetaure";
 // import TechCards from "@/components/technology";
 import AIAgents from "@/components/ai-agenta";
 // import Contact from "@/components/conatct-page";
 // import Pricing from "@/components/pricing";
-import Footer from "@/components/footer";
+
 import AIFeatureCards from "./fetaure/page";
 import TechCards from "./technology/page";
 import Pricing from "./pricing/page";

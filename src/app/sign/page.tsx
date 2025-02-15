@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Lock, User, Facebook,  } from "lucide-react";
+import { Mail, Lock, User, Facebook } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/header";
@@ -14,7 +14,8 @@ const SignupPage = () => {
   const [password, setPassword] = useState("");
   const [otp, setOtp] = useState("");
 
-  const handleSignup = (e: any) => {
+  // ✅ Corrected type for form event
+  const handleSignup = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Signup Attempt:", { name, email, password, otp });
     alert("Signup Successful! 🚀");
@@ -121,9 +122,9 @@ const SignupPage = () => {
             Facebook
           </button>
           <button className="flex-1 bg-red-500 text-white py-2 rounded-lg font-semibold hover:bg-red-600 transition flex items-center justify-center gap-2">
-          <FaGoogle />
-  Google
-</button>
+            <FaGoogle />
+            Google
+          </button>
         </div>
 
         {/* Login Link */}
